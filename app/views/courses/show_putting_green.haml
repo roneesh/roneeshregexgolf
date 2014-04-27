@@ -1,0 +1,23 @@
+%h1 Welcome to the Putting Green!
+
+%table.table.holes
+  %tr
+    %th #
+    %th Swing here!
+    %th Match This!
+    %th Don't Match This!
+    %th Completed?
+    %th Score
+  %tr.hole
+    %td
+      1
+    %td 
+      %input.form-control#regexEntry{type: "text", placeholder: "Enter your regex here"}
+    %td
+      aeiou
+    %td
+      bfjpv
+    %td
+      %span.glyphicon.glyphicon-remove
+    %td
+      0
