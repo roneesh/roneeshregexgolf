@@ -1,23 +1,17 @@
 %h1 Welcome to the Putting Green!
 
-%table.table.holes
-  %tr
-    %th #
-    %th Swing here!
-    %th Match This!
-    %th Don't Match This!
-    %th Completed?
-    %th Score
-  %tr.hole
-    %td
-      1
-    %td 
-      %input.form-control#regexEntry{type: "text", placeholder: "Enter your regex here"}
-    %td
-      aeiou
-    %td
-      bfjpv
-    %td
-      %span.glyphicon.glyphicon-remove
-    %td
-      0
+%p
+  User score:
+  %span.userScore 0
+  
+%form.regexForm
+  %span.passString aeiou
+  %span.failString bfjpv
+  %input.form-control.regexEntry{type: "text", placeholder: "regex here", data: {pass: 'aeiou', fail: 'bfjpv'}}
+  %button.btn.btn-default{type: 'submit' } Swing!
+
+%form.regexForm
+  %span.passString 13334
+  %span.failString xxooo
+  %input.form-control.regexEntry{type: "text", placeholder: "regex here", data: {pass: 'aeiou', fail: 'bfjpv'}}
+  %button.btn.btn-default{type: 'submit' } Swing!
