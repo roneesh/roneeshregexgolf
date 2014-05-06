@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'courses#putting_green'
   get '/courses/putting_green', {controller: 'courses', action: 'putting_green'}
   get '/courses/piney_pines', {controller: 'courses', action: 'piney_pines'}
   get '/courses/dobie_desert', {controller: 'courses', action: 'dobie_desert'}
