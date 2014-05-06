@@ -1,0 +1,11 @@
+<iframe class="iframe-gif" src="https://giphy.com/embed/qApcyfjsrHVJu" height="100%" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+%h1 Welcome to the Putting Green!
+
+%p
+  Course score:
+  %span.userScore 0
+  
+
+- [{number: 1, passString: "partial test", failString: "partialFail"}, {number: 2, passString: "aeiou", failString: "1337" }, {number: 3, passString: "hello", failString: "HELLO"}].each do |hole|
+  = render 'hole', hole: hole

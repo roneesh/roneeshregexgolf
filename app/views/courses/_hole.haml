@@ -1,0 +1,12 @@
+%form.regexForm
+  %div 
+    Hole   
+    = hole[:number]
+  %div
+    PASS: 
+    %span.passString= hole[:passString]
+  %div
+    FAIL:
+    %span.failString= hole[:failString]
+  %input.form-control.regexEntry{type: "text", placeholder: "regex here", data: {pass: hole["passString"], fail: hole["failString"]}}
+  %button.btn.btn-default{type: 'submit' } Swing!

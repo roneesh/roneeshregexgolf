@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get '/courses/putting_green', {controller: 'courses', action: 'show_putting_green'}
+  get '/courses/putting_green', {controller: 'courses', action: 'putting_green'}
+  get '/courses/piney_pines', {controller: 'courses', action: 'piney_pines'}
+  get '/courses/dobie_desert', {controller: 'courses', action: 'dobie_desert'}
+  get '/courses/bowsers_castle', {controller: 'courses', action: 'bowsers_castle'}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

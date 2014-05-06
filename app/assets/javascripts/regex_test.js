@@ -10,6 +10,7 @@ $( document ).ready(function() {
 	  console.log(regex_fail);
 	  var regex_string = form.find('.regexEntry').val();
 	  var RegularExpression  =  new RegExp(regex_string);
+	  console.log(RegularExpression);
 	  var testResult = regexTest(RegularExpression, regex_pass, regex_fail);
 	  
 	  evaluateTestResult(form, testResult);
@@ -38,8 +39,7 @@ var evaluateTestResult = function(form, result) {
 	if(result === true) {
 		console.log('user score is: ' + user_score);
 		updateScore();
-		form.find('input').attr('disabled', true);
-		form.find('button').attr('disabled', true);
+		disableForm(form);
 	} 
 	else {
 		user_score += 1;
@@ -47,6 +47,11 @@ var evaluateTestResult = function(form, result) {
 		updateScore();
 	}
 }
+
+var disableForm = function(form) {
+	form.find('input').attr('disabled', true);
+	form.find('button').attr('disabled', true);
+} 
 
 var updateScore = function() {
 	$('.userScore').html(user_score);

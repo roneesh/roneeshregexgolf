@@ -1,6 +1,18 @@
 class CoursesController < ApplicationController
 
-	def show_putting_green
+	def putting_green
+
+	end
+
+	def piney_pines
+
+	end
+
+	def dobie_desert
+
+	end
+
+	def bowsers_castle
 
 	end
 

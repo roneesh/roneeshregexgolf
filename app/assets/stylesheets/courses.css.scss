@@ -5,6 +5,11 @@
 .container {
 	width: 50%;
 	margin: 0 auto;
+	background-color: rgba(230,230,230,.75);
+}
+
+.body-hook {
+	background-color: black;
 }
 
 .holes {
@@ -14,3 +19,24 @@
 
 
 #regexEntry { width: 175px;}
+
+.regexForm {
+	box-sizing: border-box;
+	width: 48%;
+	border: 2px solid black;
+	float: left;
+	padding: 5%;
+	margin: 1%;
+}
+.regexForm input, .regexForm button{
+	margin-top: 10px;
+}
+
+.iframe-gif { margin: 10px auto; display:block;}
+
+@media all and (max-width: 820px) {
+  .regexForm {
+    clear: both;
+    width: 98%;
+  }
+}
