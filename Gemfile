@@ -43,3 +43,4 @@ gem 'rails_12factor', group: :production
 # gem 'debugger', group: [:development, :test]
 
 gem 'haml'
+gem 'sprockets_better_errors'
